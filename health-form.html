@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Health Form</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron">
+  <h1 class="display-4">Do you feel healthy?</h1>
+  <p class="lead">Welcome to the health form application where you can determine if you're getting the correct servings of water, fruits, and vegetables</p>
+  <hr class="my-4">
+<div class="container">
+<form class="form-horizontal" name="healthForm" action="health-form-output.php" method="post" onsubmit="return(validateForm());">
+<div class="form-group">
+<label for="Name">First Name:</label>
+<input type="text" class="form-control" id="name" placeholder="Enter your name" name="firstName">
+</div>
+<div class="form-group">
+<label for="Name">Age:</label>
+<input type="number" class="form-control" id="age" placeholder="Enter your age" name="age">
+</div>
+<div class="form-group">
+<label class="radio-inline">
+<input type="radio" name="gender" value="male">Male</label>
+</div>
+<div class="form-group">
+<label class="radio-inline">
+<input type="radio" name="gender" value="female">Female</label>
+</div>
+<div class="form-group">
+<label for="Water">Water:</label>
+<input type="number" class="form-control" id="water" placeholder="Enter cups of water" name="cups_of_water">
+</div>
+<div class="form-group">
+<label for="Fruits">Fruits:</label>
+<input type="number" class="form-control" id="fruit" placeholder="Enter servings of fruits" name="fruit">
+</div>
+<div class="form-group">
+<label for="Vegetables">Vegetables:</label>
+<input type="number" class="form-control" id="vegetables" placeholder="Enter servings of vegetables" name="vegetables">
+</div>
+<div class="form-group">
+<label for="Days">Select a day:</label>
+<select class="form-control" id="days" name="days">
+							<option disabled selected value>Day of Week</option>
+							<option value="Sunday">Sunday</option>
+							<option value="Monday">Monday</option>
+							<option value="Tuesday">Tuesday</option>
+							<option value="Wednesday">Wednesday</option>
+							<option value="Thursday">Thursday</option>
+							<option value="Friday">Friday</option>
+							<option value="Saturday">Saturday</option>
+							</select>
+</div>
+<div class="form-group">
+<button type="submit" value="Submit" class="btn btn-success">Submit</button>
+ <button type="reset" value=
+ "Reset" class="btn btn-danger">Reset</button>
+</div>
+</div>
+</form>
+<a href="https://health.gov/dietaryguidelines/dga2000/document/build.htm" target="_blank">Cick here to view serving sizes</a>
+</div>
+<script type="text/javascript" src="validate.js"></script>
+
+</body>
+</html>

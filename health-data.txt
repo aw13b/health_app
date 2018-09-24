@@ -1,0 +1,2 @@
+josh,male,30,5,Tuesday,<div class="alert alert-warning">You're not drinking enough water</div>,2,<div class="alert alert-warning">You're not eating enough fruits</div>,1,<div class="alert alert-warning">You're not eating enough fruits</div>
+Dre,male,56,6,Wednesday,<div class="alert alert-warning">You're not drinking enough water</div>,99,<div class="alert alert-danger">You're eating too much fruits</div>,222,<div class="alert alert-danger">You're eating too much fruits</div>
